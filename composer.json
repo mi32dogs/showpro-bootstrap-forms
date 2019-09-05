@@ -1,22 +1,26 @@
 {
-    "name": "showpro/showpro-bootstrap-forms",
-    "description": "showpro/showpro-bootstrap-forms",
+    "name": "unclecheese/bootstrap-forms",
+    "description": "Allows you to create forms in SilverStripe that are compatible with Twitter Bootstrap.",
     "type": "silverstripe-vendormodule",
-    "homepage": "https://github.com/mi32dogs/showpro-bootstrap-forms",
-    "keywords": [],
-    "license": "proprietary",
+    "keywords": [
+        "silverstripe",
+        "bootstrap",
+        "forms",
+        "twitter"
+    ],
+    "license": "BSD-3-Clause",
     "authors": [
-		{"name": "Rob van Tuin","email": "mi32dogs@gmail.com"}
-	],
+        {
+            "name": "Uncle Cheese",
+            "email": "unclecheese@leftandmain.com"
+        }
+    ],
     "require": {
         "php": ">=5.6",
         "silverstripe/recipe-cms": "^4.0"
     },
-    "support": {
-		"issues": "https://github.com/mi32dogs/showpro-bootstrap-forms/issues"
-	},
-    "require": {
-        "showpro/config": "*"
+    "replace": {
+        "silverstripe/bootstrap-forms": "*"
     },
     "extra": {
         "expose": [
@@ -26,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ShowPro\\BootstrapForms\\": "src/"
+            "UncleCheese\\BootstrapForms\\": "src/"
         }
     }
 }
